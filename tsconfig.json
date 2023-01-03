@@ -1,0 +1,37 @@
+{
+  "extends": "@tsconfig/node18-strictest-esm/tsconfig.json",
+  "compileOnSave": true,
+  "compilerOptions": {
+    "composite": true /* Enable project compilation */,
+    "incremental": true /* Enable incremental compilation */,
+    "removeComments": true /* Do not emit comments to output. */,
+    "listEmittedFiles": true,
+    "sourceMap": true /* Generate sourcemap files for debugging */,
+
+    /* SL experimental ESNext options */
+    "moduleResolution": "NodeNext",
+    "module": "ESNext",
+
+    /* Experimental Decoration Options */
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importsNotUsedAsValues": "preserve",
+
+    /* Additional Options */
+    "resolveJsonModule": true /* Allow importation of JSON modules */,
+
+    /* Module Paths */
+    "paths": {
+      "@resident-care/core": ["./packages/core/src"],
+      "*": ["./node_modules/*"]
+    }
+  },
+  /* Project References */
+  "references": [{ "path": "./packages/core/" }],
+  "files": [],
+  /* file watching options */
+  "watchOptions": {
+    "watchFile": "dynamicPriorityPolling",
+    "watchDirectory": "dynamicPriorityPolling"
+  }
+}

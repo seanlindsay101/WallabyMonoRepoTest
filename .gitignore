@@ -1,0 +1,14 @@
+
+# Files / Folders to exclude from Git repo
+*.code-workspace
+node_modules
+.*.env
+*.tsbuildinfo
+.scratchpad
+.npmrc
+.quokka.ts
+.certificates
+.nyc_output
+.temp
+.eslintcache
+*.secret.json

@@ -1,0 +1,13 @@
+{
+  "name": "@seanlindsay101/core",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Core Library",
+  "license": "UNLICENSED",
+  "type": "module",
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "dependencies": {
+  }
+}
